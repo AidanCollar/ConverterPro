@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConverterPro.Views.DistancePage">
+    <ContentPage.Content>
+        <ScrollView>
+         <Grid Padding="20,60,20,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition> <!-- Row 0 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 1 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 2 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 3 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 4 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 5 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 6 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 7 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 8 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 9 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 10 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 11 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 12 -->
+                <RowDefinition Height="80"></RowDefinition><!-- Row 13 -->
+                <RowDefinition Height="30"></RowDefinition><!-- Row 14 -->
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" VerticalTextAlignment="Center" Grid.Column="0" Text="Meters"/>
+            <Entry Grid.Row="0" VerticalTextAlignment="Center" Grid.Column="2" x:Name="txtMeters" Keyboard="Numeric" TextChanged="TxtMeters_OnTextChanged"/>
+            <Label Grid.Row="2" VerticalTextAlignment="Center" Grid.Column="0"  Text="Inches"/>
+            <Entry Grid.Row="2" VerticalTextAlignment="Center" Grid.Column="2" x:Name="txtInches"  Keyboard="Numeric" TextChanged="TxtInches_OnTextChanged"/>
+            <Label Grid.Row="4"  VerticalTextAlignment="Center" Grid.Column="0"  Text="Feet"/>
+            <Entry Grid.Row="4" VerticalTextAlignment="Center" Grid.Column="2" x:Name="txtFeet"  Keyboard="Numeric" TextChanged="TxtFeet_OnTextChanged"/>
+            <Label Grid.Row="6" VerticalTextAlignment="Center" Grid.Column="0"  Text="Yards"/>
+            <Entry Grid.Row="6" VerticalTextAlignment="Center" Grid.Column="2" x:Name="txtYards"  Keyboard="Numeric" TextChanged="TxtYards_OnTextChanged"/>
+            <Label Grid.Row="8" VerticalTextAlignment="Center" Grid.Column="0"  Text="Miles"/>
+            <Entry Grid.Row="8" VerticalTextAlignment="Center" Grid.Column="2" x:Name="txtMiles"  Keyboard="Numeric" TextChanged="TxtMiles_OnTextChanged"/>
+            <Label Grid.Row="10" VerticalTextAlignment="Center" Grid.Column="0"  Text="Nautical Miles"/>
+            <Entry Grid.Row="10" VerticalTextAlignment="Center" Grid.Column="2" x:Name="txtNauticalMiles"  Keyboard="Numeric" TextChanged="TxtNauticalMiles_OnTextChanged"/>
+            <Label Grid.Row="12" VerticalTextAlignment="Center" Grid.Column="0"  Text="Kilometers"/>
+            <Entry Grid.Row="12" VerticalTextAlignment="Center" Grid.Column="2" x:Name="txtKilometers"  Keyboard="Numeric" TextChanged="TxtKilometers_OnTextChanged"/>
+            <StackLayout Orientation="Horizontal" Grid.Row="14" Grid.Column="0" Grid.ColumnSpan="3" >
+                <Button Text="Clear" HorizontalOptions="FillAndExpand" Padding="5,5" Margin="5,5" Clicked="Clear_OnClicked"/>
+                <Button Text="Convert" HorizontalOptions="FillAndExpand" Padding="5,5" Margin="5,5" Clicked="Convert_OnClicked"/>
+
+            </StackLayout>
+         </Grid>
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
